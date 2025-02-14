@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Search from "./Components/Search";
-import FoodList from "./Components/FoodLIst";
+import FoodList from "./Components/FoodList";
 import Nav from "./Components/Nav";
 import "./app.module.css";
 import Container from "./Components/Container";

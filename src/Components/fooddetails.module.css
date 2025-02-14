@@ -1,0 +1,124 @@
+/* ✅ Light Mode - Default */
+.recipeCard {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 94, 58, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✅ Dark Mode */
+.darkRecipeCard {
+  background: rgba(30, 30, 30, 0.9);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 126, 95, 0.2);
+}
+
+/* Hover Effect */
+.recipeCard:hover,
+.darkRecipeCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(255, 94, 58, 0.3);
+}
+
+/* ✅ Recipe Name */
+.recipeName h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #393e46;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ✅ Dark Mode for Recipe Name */
+.darkRecipeCard .recipeName h1 {
+  color: white;
+}
+
+/* ✅ Recipe Image */
+.recipeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ✅ Recipe Details Section */
+.recipeDetails {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: rgba(255, 126, 95, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ✅ Dark Mode for Recipe Details */
+.darkRecipeDetails {
+  background: rgba(255, 126, 95, 0.2);
+}
+
+/* ✅ Serving Price */
+.recipePrice {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff7e5f;
+  margin-bottom: 15px;
+}
+
+/* ✅ Dark Mode for Serving Price */
+.darkRecipePrice {
+  color: #feb47b;
+}
+
+/* ✅ Instructions Section */
+.recipeInstructions {
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 126, 95, 0.1);
+  color: #393e46;
+}
+
+/* ✅ Dark Mode for Instructions */
+.darkRecipeInstructions {
+  background: rgba(40, 40, 40, 0.9);
+  color: white;
+}
+
+/* ✅ Ordered List Styling */
+.recipeInstructions ol {
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+/* ✅ List Items */
+.recipeInstructions li {
+  margin: 10px 0px;
+  font-size: 16px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .recipeCard {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .recipeName h1 {
+    font-size: 22px;
+  }
+
+  .recipeDetails {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .recipePrice {
+    font-size: 16px;
+  }
+}

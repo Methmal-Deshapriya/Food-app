@@ -1,0 +1,111 @@
+/* ✅ Light Mode - Default */
+.favoritesContainer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 94, 58, 0.2);
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✅ Dark Mode */
+.darkFavoritesContainer {
+  background: rgba(30, 30, 30, 0.9);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 126, 95, 0.2);
+}
+
+/* ✅ Favorite Card */
+.favoriteCard {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 94, 58, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✅ Dark Mode for Favorite Card */
+.darkFavoriteCard {
+  background: rgba(40, 40, 40, 0.9);
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 126, 95, 0.2);
+}
+
+/* Hover Effect */
+.favoriteCard:hover,
+.darkFavoriteCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(255, 94, 58, 0.3);
+}
+
+/* ✅ FIX: Only change text inside favorites */
+.favoritesContainer .darkHeading {
+  color: white;
+}
+
+.favoritesContainer .darkText {
+  color: white;
+}
+.removeButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favoriteRecipeName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ✅ Remove Button */
+.removeButton {
+  background: #ff7e5f;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✅ Dark Mode for Remove Button */
+.darkRemoveButton {
+  background: #ff4444;
+  color: white;
+}
+
+/* Hover Effect */
+.removeButton:hover,
+.darkRemoveButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 126, 95, 0.5);
+}
+
+/* ✅ Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* ✅ Image */
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .favoritesContainer {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

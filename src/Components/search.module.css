@@ -1,0 +1,59 @@
+/* Centering the search bar */
+.inputContainer {
+  margin: 20px auto; /* Centering */
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Ensures full centering */
+}
+
+/* Search Icon Placement */
+.searchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+/* Search Input Field */
+.modernInput {
+  width: 100%;
+  padding: 12px 40px 12px 40px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #393e46;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+.modernInput:focus {
+  outline: none;
+  border-color: #ff7e5f;
+  box-shadow: 0 5px 10px rgba(255, 126, 95, 0.3);
+}
+
+/* ✅ Fix Alignment for Smaller Screens */
+@media (max-width: 768px) {
+  .inputContainer {
+    max-width: 280px;
+    display: flex;
+    justify-content: center; /* Keeps it centered */
+    align-items: center;
+    margin: 10px auto; /* Ensures proper centering */
+  }
+}
+
+@media (max-width: 480px) {
+  .inputContainer {
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+  }
+}

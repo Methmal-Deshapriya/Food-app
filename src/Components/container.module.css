@@ -1,0 +1,39 @@
+.parentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Reduced gap between cards */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centering the container */
+  width: 100%; /* Ensuring full width */
+  overflow: hidden; /* Prevents extra scrolling issues */
+  box-sizing: border-box; /* Prevents width overflow issues */
+}
+
+/* Ensures both cards take proper width */
+.parentContainer > * {
+  flex: 1;
+  min-width: 0; /* Prevents content from overflowing */
+}
+
+/* Fix layout on smaller screens */
+@media (max-width: 1024px) {
+  .parentContainer {
+    flex-direction: column; /* Stack items */
+    align-items: center;
+    gap: 15px;
+    width: 100%; /* Prevents horizontal scrolling */
+  }
+
+  .parentContainer > * {
+    width: 100%; /* Ensure full width */
+  }
+}
+
+/* Fix for smaller mobile devices */
+@media (max-width: 768px) {
+  .parentContainer {
+    padding: 10px; /* Reduce padding */
+  }
+}
